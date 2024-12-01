@@ -27,9 +27,19 @@
                     <img id="tileset-source" crossorigin />
                     <div class="tileset-container_selection"></div>
                 </div>
+                <button class="button-4" id ="default_design">Your Design</button>
+                <br>
                 <button class="button-4" id ="basic_square">Basic Square</button>
                 <br>
                 <button class="button-4" id ="basic_L">Basic L shape</button>
+                <br>
+                <button class="button-4" id ="basic_postit">Basic Post it</button>
+                <br>
+                <button class="button-4" id ="basic_mpuzzle">Basic Puzzle Male</button>
+                <br>
+                <button class="button-4" id ="basic_fpuzzle">Basic Puzzle Female</button>
+                <br>
+                <button class="button-4" id ="basic_trapezium">Basic Trapezium</button>
             </aside>
             <div class="card_right-column">
                 <!-- The main canvas -->
@@ -42,9 +52,24 @@
                 <div>
                     <label>Editing Layer:</label>
                     <ul class="layers">
-                        <li><button onclick="setLayer(2)" class="layer" tile-layer="2">Top Layer</button></li>
-                        <li><button onclick="setLayer(1)" class="layer" tile-layer="1">Middle Layer</button></li>
-                        <li><button onclick="setLayer(0)" class="layer" tile-layer="0">Bottom Layer</button></li>
+                        <li class ="within-layers">
+                            <button onclick="setLayer(2)" class="layer" tile-layer="2">Equipment Layer</button>
+                                <div class="slider slider3 on" id="slider3" onclick="toggleSlider3()">
+                                    <div class="slider-button" id="slider-button"></div>
+                                </div>
+                        </li>
+                        <li class ="within-layers">
+                            <button onclick="setLayer(1)" class="layer" tile-layer="1">Walls Layer</button>
+                            <div class="slider slider2 on" id="slider2" onclick="toggleSlider2()">
+                                <div class="slider-button" id="slider-button"></div>
+                              </div>
+                        </li>
+                        <li class ="within-layers">
+                            <button onclick="setLayer(0)" class="layer" tile-layer="0">Ground Layer</button>
+                            <div class="slider slider1 on" id="slider1" onclick="toggleSlider1()">
+                                <div class="slider-button" id="slider-button"></div>
+                              </div>
+                        </li>
                     </ul>
                 </div>
             </div>
