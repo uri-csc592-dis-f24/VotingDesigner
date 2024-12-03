@@ -115,13 +115,15 @@ function clearCanvas() {
 function setLayer(newLayer) {
    //Update the layer
    currentLayer = newLayer;
-
    //Update the UI to show updated layer
    var oldActiveLayer = document.querySelector(".layer.active");
+   var oldActiveIcon = document.querySelector(".pen-icon.active");
    if (oldActiveLayer) {
       oldActiveLayer.classList.remove("active");
+      oldActiveIcon.classList.remove("active");
    }
    document.querySelector(`[tile-layer="${currentLayer}"]`).classList.add("active");
+   document.querySelector(`[tile1-layer="${currentLayer}"]`).classList.add("active");
 }
 
 function draw() {

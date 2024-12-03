@@ -222,3 +222,11 @@ label {
 .slider.on .slider-button {
     transform: translateX(25px);
 }
+
+.pen-icon{
+    visibility: hidden;
+}
+
+.layers .active {
+    visibility: visible !important;
+}
