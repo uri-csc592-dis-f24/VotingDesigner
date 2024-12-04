@@ -10,6 +10,7 @@ const slider2Button = document.getElementById("slider2-button");
 const slider3 = document.getElementById("slider3");
 const slider3Button = document.getElementById("slider3-button");
 
+
 //Default image for booting up -> Just looks nicer than loading empty canvas
 var topLayer = {};
 var bottomLayer = {};
