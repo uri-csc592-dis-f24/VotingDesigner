@@ -222,7 +222,7 @@ tilesetImage.onload = function() {
    draw();
    setLayer(0);
 }
-tilesetImage.src = "assets/final_v2.png";
+tilesetImage.src = "assets/final_v4_b_and_w.png";
 
 
 function toggleSlider1() {
