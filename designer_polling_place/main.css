@@ -9,7 +9,7 @@ html {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     padding: 1em;
-    background: linear-gradient(180deg, #FFF9E4 0%, #EEEED8 100%);
+    background: linear-gradient(180deg, #d2d2d0 0%, #d0d0d2 100%);
     display: flex;
     justify-content: space-around;
     color: #2f2c48;
@@ -116,9 +116,23 @@ body {
     border-top: 4px solid transparent;
     border-bottom: 4px solid #3166c7;
     color: #fff;
-    border-radius: 6px;
+    font-weight: bold;
+    border-radius: 3px;
     outline: 0;
-    padding: 6px 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.clear-button {
+    border: 0;
+    background: #fa4e4e;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid #c73131;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    outline: 0;
+    padding: 8px 16px;
     cursor: pointer;
 }
 
@@ -230,7 +244,7 @@ label {
 
 .grid {
     background-image:
-      repeating-linear-gradient(#ccc 0 1px, transparent 1px 100%),
-      repeating-linear-gradient(90deg, #ccc 0 1px, transparent 1px 100%);
+      repeating-linear-gradient(#ddd 0 1px, transparent 1px 100%),
+      repeating-linear-gradient(90deg, #ddd 0 1px, transparent 1px 100%);
     background-size: 32px 32px;
 }
